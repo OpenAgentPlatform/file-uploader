@@ -1,0 +1,38 @@
+{
+  "name": "@alexfunmula/file-uploader-mcp",
+  "version": "0.1.0",
+  "description": "MCP server for ploading files to OAP storage",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "file-uploader-mcp": "dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "file-upload",
+    "claude"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "mime-types": "^2.1.35",
+    "zod": "^3.23.0"
+  },
+  "devDependencies": {
+    "@types/mime-types": "^2.1.4",
+    "@types/node": "^22.0.0",
+    "typescript": "^5.6.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
