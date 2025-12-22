@@ -4,7 +4,17 @@ Uploads files to a OAP (OpenAgentPlatform) remote storage API.
 
 ## Installation
 ```json
-
+{
+  "mcpServers": {
+    "file-uploader": {
+      "command": "npx",
+      "args": ["@alexfunmula/file-uploader-mcp"],
+      "env": {
+        "OAP_CLIENT_KEY": "your-client-key"
+      }
+    }
+  }
+}
 ```
 
 ## Configuration
@@ -15,6 +25,11 @@ Set these environment variables before running:
 |----------|----------|---------|-------------|
 | `OAP_CLIENT_KEY` | Yes | - | Your OAP client key |
 | `OAP_STORAGE_BASE_URL` | No | `https://storage.oaphub.ai` | Base URL of the storage API |
+
+### Aquire OAP Client Key
+- Go to [oaphub.ai](https://oaphub.ai/)
+- Click Sign Up and create your account
+- Obtain your Client Key from [oaphub.ai/u/clientkeys](https://oaphub.ai/u/clientkeys)
 
 ## Tool: `upload_file`
 
@@ -62,9 +77,7 @@ npm run build
 ## Publishing
 
 This package uses automated publishing via GitHub Actions. To release:
-
-1. Update version in `package.json`
-2. Create and push a git tag:
+- Create and push a git tag:
    ```bash
    git tag v0.1.0
    git push origin v0.1.0
