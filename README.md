@@ -33,7 +33,7 @@ Returns a JSON object with the uploaded file URL:
 
 ```json
 {
-  "url": "https://example.com/v/abc123/filename.txt"
+  "url": "https://storage.oaphub.ai/v/xxxxxxxx/xxxxx.md"
 }
 ```
 
@@ -41,6 +41,9 @@ Returns a JSON object with the uploaded file URL:
 ## Local Development
 
 To test the MCP server locally before publishing
+```bash
+npm run build
+```
 
 ```json
 {
