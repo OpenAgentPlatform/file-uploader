@@ -1,5 +1,5 @@
 {
-  "name": "@alexfunmula/file-uploader-mcp",
+  "name": "@oaphub/file-uploader-mcp",
   "version": "0.0.0-development",
   "description": "MCP server for ploading files to OAP storage",
   "type": "module",
