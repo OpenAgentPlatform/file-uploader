@@ -1,6 +1,6 @@
 # File Uploader MCP Server
 
-Uploads local files to OAP (OpenAgentPlatform) remote storage API.
+Uploads local files to OAP (OpenAgentPlatform) remote storage.
 
 ## Installation
 ```json
