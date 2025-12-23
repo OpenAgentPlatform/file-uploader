@@ -8,7 +8,7 @@ Uploads files to a OAP (OpenAgentPlatform) remote storage API.
   "mcpServers": {
     "file-uploader": {
       "command": "npx",
-      "args": ["@alexfunmula/file-uploader-mcp"],
+      "args": ["@oaphub/file-uploader-mcp"],
       "env": {
         "OAP_CLIENT_KEY": "your-client-key"
       }
