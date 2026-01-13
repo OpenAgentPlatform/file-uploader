@@ -1,6 +1,24 @@
 # File Uploader MCP Server
+Upload local files to OAP (OpenAgentPlatform) remote storage.  
 
-Uploads local files to OAP (OpenAgentPlatform) remote storage.
+## Usage
+Mainly used in combination with MCP that accepts URL for files.  
+For example: Use image edit MCP on a local image.
+
+```mermaind
+sequenceDiagram
+    participant User
+    participant LLM
+    participant FileUploader
+    participant ImageEditMCP
+
+    User->>LLM: Edit this imege {LOCAL_PATH}
+    LLM->>FileUploader: Upload local file
+    FileUploader->>LLM: Storage URL
+    LLM->>ImageEditMCP: Edit this image {URL}
+    ImageEditMCP->>LLM: Edited image
+    LLM->>User: Here is the result
+```
 
 ## Installation
 ```json
