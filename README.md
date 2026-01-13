@@ -5,7 +5,7 @@ Upload local files to OAP (OpenAgentPlatform) remote storage.
 Mainly used in combination with MCP that accepts URL for files.  
 For example: Use image edit MCP on a local image.
 
-```mermaind
+```mermaid
 sequenceDiagram
     participant User
     participant LLM
