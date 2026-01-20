@@ -30,8 +30,9 @@ type UploadFileInput = z.infer<z.ZodObject<typeof uploadFileInputSchema>>;
 
 const uploadFileSchema = {
   title: "Upload File",
-  description:
-    "Upload a file to storage and get a URL. Automatically detects MIME type from file extension.",
+  description: `Upload a file to storage and get a URL. 
+Automatically detects MIME type from file extension.
+This is a temporary storage, files will be deleted after some time.`,
   inputSchema: uploadFileInputSchema,
   outputSchema: {
     url: z.string().describe("URL to access the uploaded file"),
