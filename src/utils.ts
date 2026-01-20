@@ -57,7 +57,7 @@ export async function uploadFile(
   const response = await axios.post(`${BASE_URL}/upload_volatile`, form, {
     headers: {
       ...form.getHeaders(),
-      Authorization: `Bearer ${AUTH_TOKEN}`,
+      ...(AUTH_TOKEN && { Authorization: `Bearer ${AUTH_TOKEN}` }),
     },
   });
 
