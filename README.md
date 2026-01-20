@@ -26,10 +26,7 @@ sequenceDiagram
   "mcpServers": {
     "file-uploader": {
       "command": "npx",
-      "args": ["@oaphub/file-uploader-mcp"],
-      "env": {
-        "OAP_CLIENT_KEY": "your-client-key"
-      }
+      "args": ["@oaphub/file-uploader-mcp"]
     }
   }
 }
@@ -41,7 +38,7 @@ Set these environment variables before running:
 
 | Variable | Required | Default | Description |
 |----------|----------|---------|-------------|
-| `OAP_CLIENT_KEY` | Yes | - | Your OAP client key |
+| `OAP_CLIENT_KEY` | No | - | Your OAP client key for longer expiration time. (> 1h)|
 | `OAP_STORAGE_BASE_URL` | No | `https://storage.oaphub.ai` | Base URL of the storage API |
 
 ### Aquire OAP Client Key
@@ -83,10 +80,7 @@ npm run build
   "mcpServers": {
     "file-uploader": {
       "command": "node",
-      "args": ["/path/to/file-uploader/dist/index.js"],
-      "env": {
-        "OAP_CLIENT_KEY": "your-client-key"
-      }
+      "args": ["/path/to/file-uploader/dist/index.js"]
     }
   }
 }
